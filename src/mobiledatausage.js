@@ -42,7 +42,7 @@ export default{
         
         //console.log(this.results)
         for(let key in this.results){
-            if(key>41){//re-organize the optained data in this method
+            if(key>41){//re-organize the optained data in this method, might only need first few data
                 
             this.chartdata.datasets[0].data.push(this.results[key]['volume_of_mobile_data'])
             this.chartdata.labels.push(this.results[key]['quarter']+'')
